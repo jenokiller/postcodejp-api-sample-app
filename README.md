@@ -1,4 +1,4 @@
-# zipcloud-api-sample-app
-- [郵便番号検索API](http://zipcloud.ibsnet.co.jp/doc/api)を利用したクライアントアプリのサンプル
+# postcodejp-api-sample-app
+- [郵便番号検索API](https://postcode-jp.com/)を利用したクライアントアプリのサンプル
 - フレームワークはAngularを利用
-- HTTP通信のみ対応
+- HTTPS通信
