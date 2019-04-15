@@ -1,0 +1,20 @@
+<div class='postcode-input-area'>
+  <label>
+    郵便番号 :
+    <input placeholder='郵便番号を入力してください' [(ngModel)]='postcode' maxlength='7'>
+    <button (click)="getAddress()">取得</button>
+  </label>
+  <span>{{errorMessage}}</span>
+</div>
+<hr>
+<div class='postcode-search-result'>
+  <div>
+    <label>都道府県 : </label>{{apiResponse?.data[0]?.pref}}
+  </div>
+  <div>
+    <label>市区町村 : </label>{{apiResponse?.data[0]?.city}}
+  </div>
+  <div>
+    <label>住所1 : </label>{{apiResponse?.data[0]?.town}}
+  </div>
+</div>
